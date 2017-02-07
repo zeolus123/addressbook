@@ -3,3 +3,11 @@ install:
 - mvn install
 jdk:
 - oraclejdk8
+deploy:
+  provider: heroku
+  api_key:
+    secure: vCa00L8PRiAOv5i6jsjSLmrF9Bba3cCOqSKXfvWd8ZjD3909rmMGc2xDa608YSiKSMwoxM9gdT1wMrl1WZGsqbX6gQY827CMR7wbdfvtYwQ/MzvsBgTc5GpFi9LxMShZAeAc5ILOALwDAA3Gxsb93jm6aJGTOxrgvmEnKjd72Z+F9/bEI8icBJvw7ZNgt267TKAvwVEBYntFzBFlvDrB+vxrEHNU35DUh+r1kmN1dVeSgD4QsTezA9hGIk8FiBYrHsjfl8m31yRjSjKXu2G39gtOqEiL+8XsUbZEDVpWlNgOasl6kGdZne1BYHjvvfZ+b1z4ChvvahybaR3gjK714efe/szvd+gscVKhC6ajs/2tUhJUGUsDw7Cb9KihMj3U89Jk+TrkxCFkrHL9WAeXxoRdZs1Ls/d/4dUEugqcrmASUljEsfvrRMoq2MUwgAS8Ra9XDNOOqxpMijOJM8l4gVdweykcsD4W4vIG5HhFoemrLhgRi7kFhLEDAIdKcjMnRvx03mlckcffILx4vfap7LCHC2Psz50RNymH2LCyhTiokhOmhL1egwQUdCeRmrUtcItwOFzcCKzZkjtUa8GCeNnNzb3EhiK2P8p/dwwZh9rz3Xu1XdRuaYCwFPYa5W0UyfK81avYvRe+3KpWRHiyOopZD2WedctkUSv3aUqrO+w=
+  app: zspenceraddressbook
+  on:
+    repo: zeolus123/addressbook
+    branch: todo_tasks
